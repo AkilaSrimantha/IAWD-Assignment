@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StudyHub.lk</title>
+    <link rel="stylesheet" href="homePage.css">
+</head>
+<body>
+   <nav class="navbar" >
+        <div class="navbar-container">
+           
+                <div class="logo">
+                    <img src="img/logo.png" alt="Edu Institute Logo">
+                </div>
+            <a href="homePage.html">
+                <div class="logof">StudyHub.lk</div>
+            </a>
+            
+             <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#">Registration</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Course Registration</a></li>
+                        <li><a href="#">Exam Registration</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Exam Details</a></li>
+                <li><a href="#">Upcoming News</a></li>
+                <li><a href="#">Contacts Us</a></li>
+                <li class="signup-btn">
+                    <a href="homePage.html">Sign Up</a>
+                </li>
+            </ul>
+            
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <div class="mimage">
+    
+        <img src="img\image.jpg" alt="intro image">
+        
+    </div>
+    <div class="mainc">
+        <h1>What are you learning today...?</h1>
+        </div>
+
+        <div class="box-b">
+            <div class="photo-container">
+                <img src="img\image1.jpg" alt="Photo 1" class="popup-photo">
+                <img src="img\image2.jpg" alt="Photo 2" class="popup-photo">
+                <img src="img\image3.jpg" alt="Photo 3" class="popup-photo">
+            </div>
+        </div>
+
+        <div class="topic-a">
+            <h2>Featured Courses</h2>
+            <h6> Handpicked courses from our staff</h6>
+        </div>
+        <div class="box-d">
+            <div class="slider">
+                <a href="Master IT.html" target="_blank" class="card">
+                    <img src="img/image4.jpg" alt="Course 1">
+                    <div class="card-title">Master IT</div>
+                    <div class="read-more">Read More</div>
+                </a>
+                <a href="ai.html" target="_blank" class="card">
+                    <img src="img/image5.jpg" alt="Course 2">
+                    <div class="card-title">A Journey into Artificial Intelligence</div>
+                    <div class="read-more">Read More</div>
+                </a>
+                <a href="MLanguage.html" target="_blank" class="card">
+                    <img src="img/image6.jpg" alt="Course 3">
+                    <div class="card-title">Multi-Language Bundle Course</div>
+                    <div class="read-more">Read More</div>
+                </a>
+                <a href="AutoCAD.html" target="_blank" class="card">
+                    <img src="img/image7.jpg" alt="Course 4">
+                    <div class="card-title">AutoCAD 2D & Revit Architecture</div>
+                    <div class="read-more">Read More</div>
+                </a>
+                
+            </div>
+        </div>
+
+        <div class="box-e">
+            <div class="carousel">
+                <img src="img/image8.png" alt="Image 8">
+                <img src="img/image9.jpg" alt="Image 9">
+                <img src="img/image10.png" alt="Image 10">
+                <img src="img/image11.jpeg" alt="Image 11">
+            </div>
+        </div>
+
+        <div  class="topic-b"> 
+            <h2>Expand your mind and conquer the world,</h2><h1>join us</h1>
+        </div>
+
+        <div  class="topic-c"> 
+            <p> Our educational institution provides you with a broad educational background under <b>"Specialty Courses"</b> 
+                and a certificate recognized by the government to conquer the job market as required by your future has 
+                also been introduced to all the courses.</p>
+        </div>
+
+        
+        <div class="box-f">
+            
+            <img src="img/image12.png" alt="Image 12">
+            </div>
+
+
+         <div  class="topic-d"> 
+            <h3>Our educational institution offers a globally accepted certificate as shown here..</h3>
+            <br><br>
+            <h4>Here are some other benefits you will get,</h4>
+            <hr>
+            <ul>
+                <li>Being a globally accepted certification</li>
+                <li>Acceptance in any institution because of a certificate given with advanced training</li>
+                <li>Not only the hard copy but also the soft copy is provided, so the ability to publish on digital platforms like Linkedin.</li>
+            </ul>
+        </div>
+
+        <div class="box-h">
+            <a href="https://www.example.com" target="_blank">
+                <button>Register Now</button>
+            </a>
+        </div>
+
+        <div class="box-g">
+            <img src="img/image13.jpg" alt="Image 13">
+        </div>
+
+       
+        
+
+        <div class="topic-e">
+            <h2>What our clients say</h2>
+            <h4>It is always nice to hear good things about us.</h4>
+            
+        </div>
+        <hr>
+
+       
+
+        <div class="feedback-carousel">
+            <img id="feedback-image" src="img/feedback1.jpg" alt="Student Feedback" />
+            <div class="controls">
+                <button onclick="prevFeedback()">Previous</button>
+                <button onclick="nextFeedback()">Next</button>
+            </div>
+        </div>
+       
+    
+        <script src="homePage.js"></script>
+
+        <div class="box-g">
+            <img src="img/image14.jpg" alt="Image 14">
+        </div>
+        <hr>
+        <br>
+
+        <div class="box-g">
+            <div class="box-i">
+
+                <img src="img/image15.png" alt="Image 15">
+
+            </div>
+            
+        </div>
+       <br>
+
+       <div class="j">
+        <img src="img/StudyHub.lk.png" alt="Website Logo" class="logo">
+        
+        <div class="contact-info">
+            <p><i class="fas fa-phone-alt"></i> Tel: +94 705731094</p>
+            <p><i class="fas fa-envelope"></i> Email: info@StudyHub.com</p>
+            <p><i class="fas fa-fax"></i> Fax: +94 705731094</p>
+        </div>
+    </div>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+
+        
+
+
+       
+</body>
+</html>
