@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.sider > div {
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+
+.sider > div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: cadetblue;
+    opacity: 0.3;
+}
+
+.sider img {
+    width: 120%;
+    height: 120%;
+    animation: zoom-o 3s linear infinite;
+}
+
+.sider1 {
+    animation: sider1 10s linear infinite;
+}
+
+.sider2 {
+    animation: sider2 10s linear infinite;
+}
+
+.sider3 {
+    animation: sider3 10s linear infinite;
+}
+
+/* Keyframes for sider1 */
+@keyframes sider1 {
+    0% { visibility: visible; }
+    33% { visibility: hidden; }
+    66% { visibility: hidden; }
+    100% { visibility: hidden; }
+}
+
+/* Keyframes for sider2 */
+@keyframes sider2 {
+    0% { visibility: hidden; }
+    33% { visibility: visible; }
+    66% { visibility: hidden; }
+    100% { visibility: hidden; }
+}
+
+/* Keyframes for sider3 */
+@keyframes sider3 {
+    0% { visibility: hidden; }
+    33% { visibility: hidden; }
+    66% { visibility: visible; }
+    100% { visibility: hidden; }
+}
+@keyframes zoom-o
+{
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media(max-width:1400px)
+{
+    .sider > div {
+        height: 85%;
+    }
+}
+
+@media(max-width:1000px)
+{
+    .sider > div {
+        height: 75%;
+    }
+}
+@media(max-width:1000px)
+{
+    .sider > div {
+        height: 65%;
+    }
+}

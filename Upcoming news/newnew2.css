@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ----Common---- */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(155,89,182,1) 0%, rgba(225,245,249,1) 100%);
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ----Timeline---- */
+.wrapper{
+    max-width: 1080px;
+    height: 100%;
+    margin: 50px auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Vertical Line */
+.wrapper .vertical-line{
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background-color: #fff;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Cards */
+.wrapper .row{
+    display: flex;
+}
+
+.wrapper .sec1{
+    justify-content: flex-start;
+}
+
+.wrapper .sec2{
+    justify-content: flex-end;
+}
+
+.wrapper .row section{
+    background-color: #58f9f9;
+    border-radius: 5px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+}
+
+/* Card Connector */
+.wrapper .row section::before{
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 40px;
+    background-color: #fff;
+    top: 0;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.sec1 section::before{
+    right: -30px;
+}
+
+.sec2 section::before{
+    left: -30px;
+}
+
+/* Card Icon & Scroll Icon */
+.row section > i,
+.vertical-line .scroll{
+    position: absolute;
+    background-color: #9b59b6;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #b3f869;
+    border: 2px #fff solid;
+}
+
+.sec1 section > i{
+    right: -60px;
+    top: 10px;
+}
+
+.sec2 section > i{
+    left: -60px;
+    top: 10px;
+}
+
+.vertical-line .scroll{
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Card Body */
+.row section p{
+    line-height: 25px;
+    border: 2px #e7e1e9 solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.row section .details,
+.row section .bottom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.row section .details .title{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.row section .details span:nth-child(2){
+    background-color: #d71212;
+    color: #8cf4a4;
+    margin-left: 20px;
+    padding: 3px 5px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+.row section .bottom a{
+    background-color: #e4f343;
+    color: #2183ae;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.row section .bottom i{
+    margin-left: 5px;
+}
+
+/* ----Responsive---- */
+@media(max-width: 750px){
+    /* Vertical Line */
+    .wrapper .vertical-line{
+        left: 40px;
+    }
+
+    /* Cards */
+    .wrapper .row{
+        margin: 30px 0 3px 60px;
+    }
+
+    .wrapper .row section{
+        width: 100%;
+    }
+
+    /* Card Coonector */
+    .sec1 section::before{
+        left: -30px;
+    }
+
+    /* Card Icon */
+    .sec1 section > i{
+        left: -60px;
+    }
+}
+
+@media(max-width: 510px){
+    /* Card Body */
+    .row section p,
+    .row section .bottom a,
+    .row section .bottom i{
+        font-size: 0.7rem;
+    }
+
+    .row section .details .title{
+        font-size: 1rem;
+    }
+
+    .row section .details span:nth-child(2){
+        font-size: 0.6rem;
+    }
+}
