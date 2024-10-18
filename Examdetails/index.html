@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Details</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exam Details</h1>
+
+        <!-- Split the page into two sections -->
+        <div class="content-wrapper">
+            <!-- Left side for guidelines -->
+            <div class="left-section">
+                <h3>Exam Guidelines</h3>
+                <p><strong>Operating Systems Exam:</strong></p>
+                <ul>
+                    <li>Bring your ID card.</li>
+                    <li>No electronic devices allowed.</li>
+                    <li>Exam duration: 2 hours.</li>
+                </ul>
+                <p><strong>Software Architecture Exam:</strong></p>
+                <ul>
+                    <li>Use only approved materials.</li>
+                    <li>No internet access allowed.</li>
+                    <li>Exam duration: 2 hours.</li>
+                </ul>
+                <p><strong>Database Systems Exam:</strong></p>
+                <ul>
+                    <li>No calculators allowed.</li>
+                    <li>Follow instructions carefully.</li>
+                    <li>Exam duration: 2 hours.</li>
+                </ul>
+                <p><strong>Networking Exam:</strong></p>
+                <ul>
+                    <li>No personal notes allowed.</li>
+                    <li>Use provided network diagrams.</li>
+                    <li>Exam duration: 2 hours.</li>
+                </ul>
+                <p><strong>Artificial Intelligence Exam:</strong></p>
+                <ul>
+                    <li>Code submission required at the end.</li>
+                    <li>Exam duration: 2 hours.</li>
+                    <li>Approved references allowed.</li>
+                </ul>
+            </div>
+
+            <!-- Right side for the image -->
+            <div class="right-section">
+                <img src="exam.jpg" alt="Exam Additional Information">
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for exam...">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <!-- Countdown Timer -->
+        <div id="countdownTimer" class="timer">
+            <h3>Next Exam Countdown</h3>
+            <p id="timer"></p>
+        </div>
+
+        <!-- Collapsible Exam Details -->
+        <div class="exam-info">
+            <button class="collapsible">Operating Systems Exam</button>
+            <div class="content">
+                <p><strong>Date:</strong> 23rd October 2024</p>
+                <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+                <p><strong>Location:</strong> Horizon Campus, Room 402</p>
+            </div>
+        </div>
+
+        <div class="exam-info">
+            <button class="collapsible">Software Architecture Exam</button>
+            <div class="content">
+                <p><strong>Date:</strong> 30th October 2024</p>
+                <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+                <p><strong>Location:</strong> Horizon Campus, Room 204</p>
+            </div>
+        </div>
+
+        <div class="exam-info">
+            <button class="collapsible">Database Systems Exam</button>
+            <div class="content">
+                <p><strong>Date:</strong> 6th November 2024</p>
+                <p><strong>Time:</strong> 9:00 AM - 11:00 AM</p>
+                <p><strong>Location:</strong> Horizon Campus, Room 101</p>
+            </div>
+        </div>
+
+        <div class="exam-info">
+            <button class="collapsible">Networking Exam</button>
+            <div class="content">
+                <p><strong>Date:</strong> 12th November 2024</p>
+                <p><strong>Time:</strong> 2:00 PM - 4:00 PM</p>
+                <p><strong>Location:</strong> Horizon Campus, Room 202</p>
+            </div>
+        </div>
+
+        <div class="exam-info">
+            <button class="collapsible">Artificial Intelligence Exam</button>
+            <div class="content">
+                <p><strong>Date:</strong> 20th November 2024</p>
+                <p><strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+                <p><strong>Location:</strong> Horizon Campus, Room 302</p>
+            </div>
+        </div>
+
+        <!-- Reminder Button -->
+        <button id="alertButton">Click for Reminder</button>
+    </div>
+</body>
+</html>

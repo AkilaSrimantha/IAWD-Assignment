@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar" >
+        <div class="navbar-container">
+           
+                <div class="logo">
+                    <img src="img/logo.png" alt="Edu Institute Logo">
+                </div>
+            <a href="homePage.html">
+                <div class="logof">StudyHub.lk</div>
+            </a>
+            
+             <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#">Registration</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Course Registration</a></li>
+                        <li><a href="#">Exam Registration</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Exam Details</a></li>
+                <li><a href="#">Upcoming News</a></li>
+                <li><a href="contactus.html">Contacts Us</a></li>
+                <li class="signup-btn">
+                    <a href="homePage.html">Sign Up</a>
+                </li>
+            </ul>
+            
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+    <div class="mimage">
+    
+        <img src="img\image.jpg" alt="intro image">
+        
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    <div class="form-container">
+        <h2>Course Registration Form</h2>
+        <form id="registrationForm" action="register.php" method="POST" onsubmit="return validateForm();">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required>
+
+            <div class="row">
+                <div class="column">
+                    <label for="mobile">Mobile Number</label>
+                    <input type="text" id="mobile" name="mobile" placeholder="Enter mobile number" required>
+                </div>
+                <div class="column">
+                    <label for="birthDate">Birth Date</label>
+                    <input type="date" id="birthDate" name="birthDate" required>
+                </div>
+            </div>
+
+            <label>Gender</label>
+            <div class="gender-options">
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="preferNotToSay" name="gender" value="Prefer not to say">
+                <label for="preferNotToSay">Prefer not to say</label>
+            </div>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Enter address" required>
+
+            <div class="row">
+                <div class="column">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required>
+                        <option value="">Country</option>
+                        <option value="US">United States</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="CA">Australia</option>
+                        <option value="SL">Sri Lanka</option>
+                    </select>
+                </div>
+                <div class="column">
+                    <label for="postalCode">Postal Code</label>
+                    <input type="text" id="postalCode" name="postalCode" placeholder="Enter postal code" required>
+                </div>
+            </div>
+
+            <label for="faculty">Faculty</label>
+            <input type="text" id="faculty" name="faculty" placeholder="Enter faculty" required>
+
+            <label for="course">Course</label>
+            <input type="text" id="course" name="course" placeholder="Enter course" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <div class="j">
+        <img src="img/StudyHub.lk.png" alt="Website Logo" class="logo">
+        
+        <div class="contact-info">
+            <p><i class="fas fa-phone-alt"></i> Tel: +94 705731094</p>
+            <p><i class="fas fa-envelope"></i> Email: info@StudyHub.com</p>
+            <p><i class="fas fa-fax"></i> Fax: +94 705731094</p>
+        </div>
+    </div>
+    
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="script.js"></script>
+</body>
+</html>
